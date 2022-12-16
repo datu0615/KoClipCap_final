@@ -58,7 +58,7 @@ Extract CLIP features using (output is `data/coco/oscar_split_ViT-B_32_train.pkl
 ```
 python parse_coco.py --clip_model_type ViT-B/32
 ```
-Train with fine-tuning of GPT2:
+Train with fine-tuning of KoGPT2:
 ```
 python train.py --data ./data/coco/oscar_split_ViT-B_32_train.pkl --out_dir ./coco_train/
 ```
@@ -87,7 +87,7 @@ python parse_conceptual.py --clip_model_type ViT-B/32 --data_root <data_root> --
 ```
 Notice, downloading the images might take a few days.
 
-Train with fine-tuning of GPT2:
+Train with fine-tuning of KoGPT2:
 ```
 python train.py --data <data_root>/conceptual_clip_ViT-B_32_train.pkl --out_dir ./conceptual_train/
 ```
